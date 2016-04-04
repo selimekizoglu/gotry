@@ -1,4 +1,4 @@
-package main
+package gotry
 
 import (
 	"errors"
