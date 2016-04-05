@@ -5,7 +5,6 @@ import (
 )
 
 type Retry struct {
-	Max     uint
-	Attempt uint
+	Max     int
 	Timeout time.Duration
 }
