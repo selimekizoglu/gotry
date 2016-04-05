@@ -18,7 +18,7 @@ operation := func() error {
 }
 
 // retry an operation up to 5 times
-retry := &Retry{Max: 5, Timeout: 2 * time.Second}
+retry := Retry{Max: 5, Timeout: 2 * time.Second}
 err := Try(operation, retry)
 if err != nil {
     // operation failed after 5 retries
